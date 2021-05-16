@@ -11,6 +11,13 @@ public class Graph
     maxAnzahl = kAnzahl;
     knotenliste = new Knoten[maxAnzahl];
     matrix = new boolean[maxAnzahl][maxAnzahl];
+    for (int i = 0; i < maxAnzahl; i++)
+    {
+      for (int j = 0; j < maxAnzahl; j++)
+      {
+        matrix[i][j] = false;
+      }
+    }
   }
   
   public void tiefensucheStart(String ort)
